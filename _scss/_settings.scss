@@ -1,0 +1,14 @@
+@import "compass";
+$sprites-spacing: 4px;
+
+
+/*----------------------------------------------------*/
+
+
+/*PC---TOP*/
+
+
+$sprites: sprite-map("/parts/*.png", $spacing: $sprites-spacing);
+$sprites-img: sprite-url($sprites);
+
+

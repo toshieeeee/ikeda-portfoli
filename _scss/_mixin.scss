@@ -1,0 +1,54 @@
+@import "import";
+@mixin sprite-base-bg($sprites, $sprite-img, $pixelRatio:2) {
+  background: $sprite-img no-repeat;
+  $sprite-file-data: sprite-path($sprites);
+  @include prefixed-property("background-size", ceil(image-width($sprite-file-data) / $pixelRatio) auto);
+}
+
+@mixin sprite-bg($sprites, $file-name, $pixelRatio:2) {
+  $sprite-file-data: sprite-file($sprites, $file-name);
+  background-position: round(nth(sprite-position($sprites, $file-name), 1) / $pixelRatio) round(nth(sprite-position($sprites, $file-name), 2) / $pixelRatio);
+  height: ceil(image-height($sprite-file-data) / $pixelRatio);
+  width: ceil(image-width($sprite-file-data) / $pixelRatio);
+}
+
+
+
+// opacity
+// @include opacity(0.5);
+@mixin opacity($opacity) {
+	opacity: $opacity;
+	filter: alpha(opacity=($opacity * 100));
+ }
+
+
+// box-shadow
+// @include box-shadow(8px, 8px);
+// 右方向 下方向 ぼかし 広がり 色;
+ @mixin box-shadow( $h:10px , $v:10px , $b:0px , $s:0px , $c: #000000 ) {
+	-webkit-box-shadow: $h $v $b $s $c;
+	-moz-box-shadow: $h $v $b $s $c;
+	-o-background-size: $h $v $b $s $c;
+	-ms-box-shadow: $h $v $b $s $c;
+	box-shadow: $h $v $b $s $c;
+ }
+
+
+// background-size
+// @include background-size(8px);
+ @mixin background-size($wSize: 10px) {
+ 	-webkit-background-size: $wSize auto;
+	-moz-background-size: $wSize auto;
+	-o-background-size: $wSize auto;
+	-ms-background-size: $wSize auto;
+	background-size: $wSize auto;
+ }
+
+ @mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+ }
+
