@@ -454,3 +454,322 @@ tt {
 
 /*----------------------------------------------------*/
 /*PC---TOP*/
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.is-sprite {
+  background: url(/parts-s7f9043afe3.png) no-repeat;
+  -webkit-background-size: 796px auto;
+  -moz-background-size: 796px auto;
+  -o-background-size: 796px auto;
+  -ms-background-size: 796px auto;
+  background-size: 796px auto;
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.top-title {
+  color: #fff;
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 2;
+  margin-bottom: 24px;
+  margin-top: 150px;
+}
+
+.title-border {
+  width: 50px;
+  height: 1px;
+  background: #000;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.top-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 2;
+  text-align: center;
+}
+
+.header {
+  height: 700px;
+  width: 100%;
+  background-image: url("/image/pc-top-bg.png");
+  background-size: cover;
+}
+
+.top-logo {
+  background-position: 0 -177px;
+  height: 87px;
+  width: 90px;
+  float: left;
+  margin-left: 100px;
+  margin-top: 12px;
+}
+
+.nav-wrap {
+  float: right;
+  margin-top: 48px;
+  margin-right: 80px;
+}
+
+.nav-list {
+  float: left;
+  margin-left: 12px;
+}
+
+.nav-link {
+  font-size: 14px;
+  color: #fff;
+  font-family: impact;
+}
+
+.section-about-wrap,
+.section-portfolio-wrap,
+.section-news-wrap,
+.section-contact-wrap {
+  margin-top: 88px;
+}
+
+.about-prof-wrap,
+.about-prof-text-wrap,
+.portfolio-list-wrap,
+.news-list-wrap,
+.contact-text-wrap {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.about-prof-wrap {
+  margin-bottom: 24px;
+}
+
+.section-title {
+  text-align: center;
+}
+
+.about-prof-img {
+  background-position: 0 -44px;
+  height: 131px;
+  width: 131px;
+  float: left;
+}
+
+.about-prof-name {
+  font-size: 14px;
+  font-weight: 600;
+  float: left;
+  margin-left: 32px;
+  margin-top: 42px;
+}
+
+.about-prof-text,
+.about-prof-list-solo-show,
+.about-prof-list-group-show {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: 'ヒラギノ角ゴ Pro W3';
+  text-align: left;
+  line-height: 2;
+}
+
+.about-prof-list-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.about-prof-text,
+.about-prof-list-solo-show:last-child {
+  margin-bottom: 36px;
+}
+
+.about-prof-list-group-show:last-child {
+  margin-bottom: 88px;
+}
+
+.about-prof-bottom-bg {
+  height: 600px;
+  width: 100%;
+  background-image: url("/image/pc-about-bg.png");
+  background-size: cover;
+}
+
+.portfolio-bottom-bg {
+  height: 600px;
+  width: 100%;
+  background-image: url("/image/pc-portfolio-bg.png");
+  background-size: cover;
+}
+
+.portfolio-list-wrap {
+  width: 1000px;
+}
+
+.portfolio-img-title_01,
+.portfolio-img-title_02 {
+  margin-bottom: 12px;
+}
+
+.portfolio-img-wrap-star {
+  margin-top: 42px;
+  margin-bottom: 88px;
+}
+
+.portfolio-img {
+  float: left;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+.portfolio-img_01 {
+  background-position: 0 -266px;
+  height: 81px;
+  width: 122px;
+}
+
+.portfolio-img_02 {
+  background-position: 0 -433px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_03 {
+  background-position: 0 -516px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_04 {
+  background-position: 0 -599px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_05 {
+  background-position: 0 -681px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_06 {
+  background-position: 0 -764px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_07 {
+  background-position: 0 -847px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_08 {
+  background-position: 0 -930px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_09 {
+  background-position: 0 -1013px;
+  height: 82px;
+  width: 121px;
+}
+
+.portfolio-img_10 {
+  background-position: 0 -1097px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_11 {
+  background-position: 0 -1180px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_12 {
+  background-position: 0 -1263px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-img_13 {
+  background-position: 0 -1346px;
+  height: 82px;
+  width: 121px;
+}
+
+.portfolio-img_14 {
+  background-position: 0 -1429px;
+  height: 81px;
+  width: 121px;
+}
+
+.news-bottom-bg {
+  height: 600px;
+  width: 100%;
+  background-image: url("/image/pc-news-bg.png");
+  background-size: cover;
+}
+
+.news-list:last-child {
+  margin-bottom: 88px;
+}
+
+.contact-text {
+  font-size: 12px;
+  font-weight: 300;
+  font-family: 'ヒラギノ角ゴ Pro W3';
+  text-align: left;
+  line-height: 2;
+}
+
+.footer {
+  margin-right: 80px;
+  margin-left: 100px;
+  border-top: 1px solid #000;
+  margin-top: 110px;
+  height: 80px;
+}
+
+.footer-copy {
+  text-align: center;
+  line-height: 80px;
+}
+
+.sns-wrap {
+  float: right;
+  margin-top: -50px;
+}
+
+.sns {
+  float: left;
+  margin-left: 12px;
+}
+
+.fb-btn {
+  background-position: 0 0;
+  height: 20px;
+  width: 10px;
+}
+
+.insta-btn {
+  background-position: 0 -22px;
+  height: 20px;
+  width: 21px;
+}
+
+.tumblr-btn {
+  background-position: 0 -2805px;
+  height: 21px;
+  width: 17px;
+}
