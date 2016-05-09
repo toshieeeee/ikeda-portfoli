@@ -5,6 +5,8 @@
 
 @import "settings";
 
+// font-color: #4e4e4e;
+
 .clearfix:after {
   content: '';
   display: table;
@@ -20,20 +22,23 @@
 
 
 .top-title {
+	/*
 	color: #fff;
 	font-size: 36px;
 	font-weight: 100;
 	text-align: center;
 	letter-spacing: 2;
+	*/
+	@include sprite-bg($sprites, 'top-title', 2);
 	margin-bottom: 24px;
 	margin-top: 280px;
-	//position:absolute;
+	position:absolute;	
 }
 
 .title-border {
 	width: 50px;
 	height: 1px;
-	background :#000;
+	background :#4e4e4e;
 	margin:0 auto;
 	margin-top: 10px;
 	margin-bottom :50px;
@@ -42,12 +47,19 @@
 
 
 .top-text {
+	
 	color: #fff;
 	font-size: 18px;
 	font-weight: 100;
 	line-height :2;
 	text-align: center;
 	
+	/*@include sprite-bg($sprites, 'top-text', 2);
+	margin-bottom: 24px;
+	margin-top: 400px;
+	position:absolute;
+	*/	
+		
 }
 
 .header {
@@ -55,7 +67,6 @@
 	width: 100%;
 	background-image: url('/image/pc-top-bg.png');
 	background-size: cover;
-	background-attachment: fixed; // test
 	//margin-top: -150px;//test
 }
 
@@ -95,7 +106,7 @@
 
 .nav-link {
 	font-size: 14px;
-	color: #fff;
+	color: #4e4e4e;
 	font-family: impact;
 }
 
@@ -170,7 +181,6 @@
 	width: 100%;
 	background-image: url('/image/pc-about-bg.png');
 	background-size: cover;
-	background-attachment: fixed; // test
 }
 
 
@@ -182,7 +192,6 @@
 	width: 100%;
 	background-image: url('/image/pc-portfolio-bg.png');
 	background-size: cover;
-	background-attachment: fixed; // test
 }
 
 .portfolio-list-wrap {
@@ -192,6 +201,11 @@
 .portfolio-img-title_01,
 .portfolio-img-title_02 {
 	margin-bottom: 12px;
+}
+
+.portfolio-img-wrap-search,
+.portfolio-img-wrap-star {
+	margin-left: 12px;
 }
 
 .portfolio-img-wrap-star {
@@ -265,7 +279,6 @@
 	width: 100%;
 	background-image: url('/image/pc-news-bg.png');
 	background-size: cover;
-	background-attachment: fixed; // test
 }
 
 .news-list:last-child {
@@ -287,7 +300,7 @@
 .footer {
 		margin-right: 80px;
 		margin-left: 100px;
-		border-top: 1px solid #000;
+		border-top: 1px solid #4e4e4e;
 		margin-top: 110px; 
 		height: 80px;
 }
@@ -332,7 +345,25 @@
 
 
 .nav-fixed {
-	background: #000;
-	color: #000;
+	background: #fff;
+	color: #4e4e4e;
 	-webkit-transition-duration:1s;
+	-moz-transition-duration:1s;
  }
+
+ .about-prof-bottom-bg,
+ .portfolio-bottom-bg,
+ .news-bottom-bg {
+	opacity: 0;
+}
+
+ .show-each-section {
+ 	opacity: 1;
+ 	-webkit-transition-duration: 3s;
+ }
+
+.cboxLoadingOverlay, 
+ .cboxLoadingGraphic {
+ 	display: none !important;
+ }
+
