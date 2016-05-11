@@ -15,23 +15,14 @@ $(window).scroll(function(){
 })
 	*/
 
-//カラーボックス（プラグイン）
-
-$(function() {
-    $('.lightbox').colorbox({
-
-    	width: 900,
-    	//onComplete: true,
-    	transition: 'fade',
-    	next: 'next'
+//Light Box
 
 
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
     })
-    $('.lightbox2').colorbox({
-        inline: true
-    });
-    $('.lightbox3').colorbox();
-});
+
 
 /*各セクションの背景の表示速度調整*/
 

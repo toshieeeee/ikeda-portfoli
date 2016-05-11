@@ -461,7 +461,7 @@ tt {
 }
 
 .is-sprite {
-  background: url(/parts-s7f9043afe3.png) no-repeat;
+  background: url(/parts-s54e5192062.png) no-repeat;
   -webkit-background-size: 796px auto;
   -moz-background-size: 796px auto;
   -o-background-size: 796px auto;
@@ -513,7 +513,7 @@ tt {
 .header {
   height: 700px;
   width: 100%;
-  background-image: url("/image/pc-top-bg.png");
+  background-image: url("/images/pc-top-bg.png");
   background-size: cover;
 }
 
@@ -623,14 +623,14 @@ tt {
 .about-prof-bottom-bg {
   height: 600px;
   width: 100%;
-  background-image: url("/image/pc-about-bg.png");
+  background-image: url("/images/pc-about-bg.png");
   background-size: cover;
 }
 
 .portfolio-bottom-bg {
   height: 600px;
   width: 100%;
-  background-image: url("/image/pc-portfolio-bg.png");
+  background-image: url("/images/pc-portfolio-bg.png");
   background-size: cover;
 }
 
@@ -666,87 +666,177 @@ tt {
 }
 
 .portfolio-img_02 {
-  background-position: 0 -433px;
+  background-position: 0 -349px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_03 {
-  background-position: 0 -516px;
+  background-position: 0 -432px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_04 {
-  background-position: 0 -599px;
+  background-position: 0 -515px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_05 {
-  background-position: 0 -681px;
+  background-position: 0 -598px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_06 {
-  background-position: 0 -764px;
+  background-position: 0 -681px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_07 {
-  background-position: 0 -847px;
+  background-position: 0 -764px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_08 {
+  background-position: 0 -847px;
+  height: 82px;
+  width: 121px;
+}
+
+.portfolio-img_09 {
   background-position: 0 -930px;
   height: 81px;
   width: 121px;
 }
 
-.portfolio-img_09 {
-  background-position: 0 -1013px;
-  height: 82px;
-  width: 121px;
-}
-
 .portfolio-img_10 {
-  background-position: 0 -1097px;
+  background-position: 0 -1013px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_11 {
-  background-position: 0 -1180px;
+  background-position: 0 -1096px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_12 {
-  background-position: 0 -1263px;
+  background-position: 0 -1179px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_13 {
+  background-position: 0 -1262px;
+  height: 82px;
+  width: 122px;
+}
+
+.portfolio-img_14 {
   background-position: 0 -1346px;
   height: 82px;
   width: 121px;
 }
 
-.portfolio-img_14 {
+.portfolio-img_15 {
   background-position: 0 -1429px;
   height: 81px;
   width: 121px;
 }
 
+.portfolio-img_16 {
+  background-position: 0 -1512px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_1 {
+  background-position: 0 -1595px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_2 {
+  background-position: 0 -1678px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_3 {
+  background-position: 0 -1761px;
+  height: 82px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_4 {
+  background-position: 0 -1845px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_5 {
+  background-position: 0 -1928px;
+  height: 81px;
+  width: 122px;
+}
+
+.portfolio-konohoshi-img_6 {
+  background-position: 0 -2011px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_7 {
+  background-position: 0 -2094px;
+  height: 82px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_8 {
+  background-position: 0 -2177px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_9 {
+  background-position: 0 -2260px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_10 {
+  background-position: 0 -2343px;
+  height: 82px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_11 {
+  background-position: 0 -2427px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_12 {
+  background-position: 0 -2510px;
+  height: 81px;
+  width: 121px;
+}
+
+.portfolio-konohoshi-img_13 {
+  background-position: 0 -2593px;
+  height: 82px;
+  width: 122px;
+}
+
 .news-bottom-bg {
   height: 600px;
   width: 100%;
-  background-image: url("/image/pc-news-bg.png");
+  background-image: url("/images/pc-news-bg.png");
   background-size: cover;
 }
 

@@ -1,9 +1,9 @@
 http_path = "/"
 css_dir = "css"
 sass_dir = "_scss"
-images_dir = "image/"
-http_images_path = "/image/"
-http_images_dir = "image/"
+images_dir = "images/"
+http_images_path = "/images/"
+http_images_dir = "images/"
 javascripts_dir = "js"
 output_style = :expanded
 #output_style = :compressed

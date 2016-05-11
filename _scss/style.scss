@@ -65,7 +65,7 @@
 .header {
 	height: 700px;
 	width: 100%;
-	background-image: url('/image/pc-top-bg.png');
+	background-image: url('/images/pc-top-bg.png');
 	background-size: cover;
 	//margin-top: -150px;//test
 }
@@ -179,7 +179,7 @@
 .about-prof-bottom-bg {
 	height: 600px;
 	width: 100%;
-	background-image: url('/image/pc-about-bg.png');
+	background-image: url('/images/pc-about-bg.png');
 	background-size: cover;
 }
 
@@ -190,7 +190,7 @@
 .portfolio-bottom-bg {
 	height: 600px;
 	width: 100%;
-	background-image: url('/image/pc-portfolio-bg.png');
+	background-image: url('/images/pc-portfolio-bg.png');
 	background-size: cover;
 }
 
@@ -269,7 +269,52 @@
 .portfolio-img_14 {
 	@include sprite-bg($sprites, 's01-img_14', 2);
 }
+.portfolio-img_15 {
+	@include sprite-bg($sprites, 's01-img_15', 2);
+}
+.portfolio-img_16 {
+	@include sprite-bg($sprites, 's01-img_16', 2);
+}
 
+.portfolio-konohoshi-img_1 {
+	@include sprite-bg($sprites, 's02-img_01', 2);
+}
+.portfolio-konohoshi-img_2 {
+	@include sprite-bg($sprites, 's02-img_02', 2);
+}
+.portfolio-konohoshi-img_3 {
+	@include sprite-bg($sprites, 's02-img_03', 2);
+}
+.portfolio-konohoshi-img_4 {
+	@include sprite-bg($sprites, 's02-img_04', 2);
+}
+.portfolio-konohoshi-img_5 {
+	@include sprite-bg($sprites, 's02-img_05', 2);
+}
+.portfolio-konohoshi-img_6 {
+	@include sprite-bg($sprites, 's02-img_06', 2);
+}
+.portfolio-konohoshi-img_7 {
+	@include sprite-bg($sprites, 's02-img_07', 2);
+}
+.portfolio-konohoshi-img_8 {
+	@include sprite-bg($sprites, 's02-img_08', 2);
+}
+.portfolio-konohoshi-img_9 {
+	@include sprite-bg($sprites, 's02-img_09', 2);
+}
+.portfolio-konohoshi-img_10 {
+	@include sprite-bg($sprites, 's02-img_10', 2);
+}
+.portfolio-konohoshi-img_11 {
+	@include sprite-bg($sprites, 's02-img_11', 2);
+}
+.portfolio-konohoshi-img_12 {
+	@include sprite-bg($sprites, 's02-img_12', 2);
+}
+.portfolio-konohoshi-img_13 {
+	@include sprite-bg($sprites, 's02-img_13', 2);
+}
 
 //news
 
@@ -277,7 +322,7 @@
 .news-bottom-bg {
 	height: 600px;
 	width: 100%;
-	background-image: url('/image/pc-news-bg.png');
+	background-image: url('/images/pc-news-bg.png');
 	background-size: cover;
 }
 
