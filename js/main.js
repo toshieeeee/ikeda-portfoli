@@ -1,28 +1,10 @@
-/*
-$(window).scroll(function(){
-	var scrollVal = $(window).scrollTop(),
-	    topText = $(".c-top__text"),
-	    topImg = $(".c-top__image"),
-	    topImgFront = $(".c-top__image--front"),
-	    topBtn = $(".c-top__scrollBtn");
-
-	if(!navigator.userAgent.match(/(iPhone|iPad|Android)/)){
-		// $(topText).css('top',(0 -(scrollVal * 0.3)) + 'px');
-		// $(topBtn).css('top',(0 -(scrollVal * 0.2)) + 'px');
-		$(topImg).css('top',(0 -(scrollVal * 0.2)) + 'px');
-		$(topImgFront).css('top',(0 -(scrollVal * 0.4)) + 'px');
-	}
-})
-	*/
-
 //Light Box
 
 
-    lightbox.option({
-      'resizeDuration': 200,
-      'wrapAround': true
-    })
-
+lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
+})
 
 /*各セクションの背景の表示速度調整*/
 
@@ -35,17 +17,28 @@ var newHeight = $('.news-bottom-bg').offset().top - 750;
 
 
 $(window).scroll(function(){
-	var scrollVal = $(window).scrollTop();
 
+	var scrollVal = $(window).scrollTop();
 	var aboutHeight = $('.section-about-wrap').offset().top;
 	
-	if(scrollVal > aboutHeight){
+	if(scrollVal > aboutHeight - 200){
 		$('.h-top-nav-wrap').addClass('nav-fixed');
+		$('.top-logo').addClass('pc-top-logo');
+		$('.about').addClass('fix-about');
+		$('.portpfolio').addClass('fix-portpfolio');
+		$('.news').addClass('fix-news');
+		$('.contact').addClass('fix-contact');
+
 
 
 	}else{
 		$('.h-top-nav-wrap').addClass('nav-init');
 		$('.h-top-nav-wrap').removeClass('nav-fixed');
+		$('.top-logo').removeClass('pc-top-logo');
+		$('.about').removeClass('fix-about');
+		$('.portpfolio').removeClass('fix-portpfolio');
+		$('.news').removeClass('fix-news');
+		$('.contact').removeClass('fix-contact');
 	}
 
 	if(scrollVal > aboutHeight + 500){
@@ -60,23 +53,16 @@ $(window).scroll(function(){
 		$('.news-bottom-bg').addClass('show-each-section');
 	}
 
-})
-
-/*
-$(window).load(function () {
-
-	var topHeight = $(window).height();
-	$('.header').css('height' , topHeight + 'px');
-
 });
 
-*/
 // リサイズイベント
 
 $(window).resize(function() {
 
 	var topHeight = $(window).height();
 	$('.header').css('height' , topHeight + 'px');
+	$('.top-title').css('margin-top' , topHeight / 2.8 + 'px');
+	$('.top-text').css('margin-top' , topHeight / 2.2 + 'px');
      
 });
 
@@ -86,13 +72,23 @@ document.addEventListener( 'DOMContentLoaded', function(){
 
 	var topHeight = $(window).height();
 	$('.header').css('height' , topHeight + 'px');
+	$('.top-title').css('margin-top' , topHeight / 2.8 + 'px');
+	$('.top-text').css('margin-top' , topHeight / 2.2 + 'px');
+	
 
 }, false );
 
-
-
-
-
-
-
+$('a[href^=#]').click(function() {
+  // スクロールの速度
+  var speed = 400; // ミリ秒
+  // アンカーの値取得
+  var href= $(this).attr("href");
+  // 移動先を取得
+  var target = $(href == "#" || href == "" ? 'html' : href);
+  // 移動先を数値で取得
+  var position = target.offset().top - 120;
+  // スムーススクロール
+  $('body,html').animate({scrollTop:position}, speed, 'swing');
+  return false;
+});
 

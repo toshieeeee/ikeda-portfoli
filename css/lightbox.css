@@ -14,8 +14,10 @@ body.lb-disable-scrolling {
   left: 0;
   z-index: 9999;
   background-color: #fff;
+  /*
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
+  */
   display: none;
 }
 
@@ -103,6 +105,11 @@ body.lb-disable-scrolling {
   display: block;
 }
 
+.lb-next {
+    height: 80%;
+    margin-top: 13%;
+  }
+
 .lb-nav a.lb-prev {
   width: 34%;
   left: 0;
@@ -188,12 +195,14 @@ body.lb-disable-scrolling {
 
 .lb-data .lb-close {
   display: block;
-  /*float: right;*/
+  float: right;
+  /*margin-left: 130px;*/
 
-  position: absolute;
+  /*position: absolute;
   top: 5px;
   right: 50%;
   margin-right: -485px;
+  */
   width: 30px;
   height: 30px;
   background: url(../images/close.png) top right no-repeat;

@@ -1,8 +1,10 @@
 /* Preload images */
+/*
 body:after {
   content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
   display: none;
 }
+*/
 
 body.lb-disable-scrolling {
   overflow: hidden;
@@ -102,6 +104,11 @@ body.lb-disable-scrolling {
   display: block;
 }
 
+.lb-next {
+    height: 80%;
+    margin-top: 13%;
+  }
+
 .lb-nav a.lb-prev {
   width: 34%;
   left: 0;
@@ -199,8 +206,10 @@ body.lb-disable-scrolling {
   transition: opacity 0.2s;
 }
 
+
 .lb-data .lb-close:hover {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
 }
+

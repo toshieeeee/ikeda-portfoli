@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/*common*/
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -454,6 +453,9 @@ tt {
 
 /*----------------------------------------------------*/
 /*PC---TOP*/
+/***************
+//BASE & COMMON
+****************/
 .clearfix:after {
   content: '';
   display: table;
@@ -461,7 +463,7 @@ tt {
 }
 
 .is-sprite {
-  background: url(/parts-s54e5192062.png) no-repeat;
+  background: url(/parts-s74c03730f8.png) no-repeat;
   -webkit-background-size: 796px auto;
   -moz-background-size: 796px auto;
   -o-background-size: 796px auto;
@@ -472,20 +474,23 @@ tt {
   overflow: hidden;
 }
 
-.top-title {
-  /*
-  color: #fff;
-  font-size: 36px;
-  font-weight: 100;
-  text-align: center;
-  letter-spacing: 2;
-  */
-  background-position: 0 -2770px;
-  height: 33px;
-  width: 796px;
-  margin-bottom: 24px;
-  margin-top: 280px;
-  position: absolute;
+.about-prof-name,
+.about-prof-list-group-show,
+.about-prof-text,
+.about-prof-list-title,
+.about-prof-list-solo-show,
+.portfolio-img-title_01,
+.portfolio-img-title_02,
+.news-list,
+.contact-text,
+.footer-copy {
+  color: #4e4e4e;
+}
+
+body,
+.about-prof-text,
+.contact-text {
+  font-family: Avenir ,  "Open Sans" ,  "Helvetica Neue" ,  Helvetica ,  Arial ,  Verdana ,  Roboto ,  "ヒラギノ角ゴ Pro W3" ,  "Hiragino Kaku Gothic Pro" ,  "游ゴシック" ,  "Yu Gothic" ,  "游ゴシック体" ,  "YuGothic" ,  "Meiryo UI" ,  "メイリオ" ,  Meiryo ,  "ＭＳ Ｐゴシック" , "MS PGothic" ,  sans-serif;
 }
 
 .title-border {
@@ -497,63 +502,8 @@ tt {
   margin-bottom: 50px;
 }
 
-.top-text {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 100;
-  line-height: 2;
+.section-title {
   text-align: center;
-  /*@include sprite-bg($sprites, 'top-text', 2);
-  margin-bottom: 24px;
-  margin-top: 400px;
-  position:absolute;
-  */
-}
-
-.header {
-  height: 700px;
-  width: 100%;
-  background-image: url("/images/pc-top-bg.png");
-  background-size: cover;
-}
-
-.top-text-wrap {
-  position: absolute;
-  margin-left: -377px;
-  left: 50%;
-}
-
-.h-top-nav-wrap {
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  z-index: 100;
-}
-
-.top-logo {
-  background-position: 0 -177px;
-  height: 87px;
-  width: 90px;
-  float: left;
-  margin-left: 100px;
-  margin-top: 12px;
-}
-
-.nav-wrap {
-  float: right;
-  margin-top: 48px;
-  margin-right: 80px;
-}
-
-.nav-list {
-  float: left;
-  margin-left: 12px;
-}
-
-.nav-link {
-  font-size: 14px;
-  color: #4e4e4e;
-  font-family: impact;
 }
 
 .section-about-wrap,
@@ -572,16 +522,188 @@ tt {
   margin: 0 auto;
 }
 
+/***************
+//TOP
+****************/
+.top-title {
+  /*
+  color: #fff;
+  font-size: 36px;
+  font-weight: 100;
+  text-align: center;
+  letter-spacing: 2;
+  */
+  background-position: 0 -3138px;
+  height: 33px;
+  width: 796px;
+  margin-bottom: 24px;
+  margin-top: 280px;
+  position: absolute;
+}
+
+.top-text {
+  /*color: #fff;
+  font-size: 18px;
+  font-weight: 100;
+  line-height :2;
+  text-align: center;
+  */
+  background-position: 0 -3045px;
+  height: 91px;
+  width: 681px;
+  margin-bottom: 24px;
+  margin-top: 400px;
+  position: absolute;
+}
+
+.top-btn {
+  background-position: 0 -2919px;
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -35px;
+  margin-bottom: 40px;
+}
+
+.top-text-wrap {
+  position: absolute;
+  margin-left: -377px;
+  left: 50%;
+}
+
+.top-logo {
+  background-position: 0 -2956px;
+  height: 87px;
+  width: 90px;
+  float: left;
+  margin-top: 12px;
+}
+
+/***************
+//TOP-NAV
+****************/
+.about {
+  background-position: 0 -29px;
+  height: 10px;
+  width: 56px;
+}
+
+.portpfolio {
+  background-position: 0 -65px;
+  height: 10px;
+  width: 92px;
+}
+
+.news {
+  background-position: 0 -53px;
+  height: 10px;
+  width: 46px;
+}
+
+.contact {
+  background-position: 0 -41px;
+  height: 10px;
+  width: 78px;
+}
+
+.fix-about {
+  background-position: 0 -99px;
+  height: 10px;
+  width: 56px;
+}
+
+.fix-portpfolio {
+  background-position: 0 -135px;
+  height: 10px;
+  width: 92px;
+}
+
+.fix-news {
+  background-position: 0 -123px;
+  height: 10px;
+  width: 46px;
+}
+
+.fix-contact {
+  background-position: 0 -111px;
+  height: 10px;
+  width: 78px;
+}
+
+.h-top-nav-wrap {
+  width: 100%;
+  height: 120px;
+  position: fixed;
+  z-index: 100;
+}
+
+.h-top-nav-inner-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.nav-wrap {
+  float: right;
+  margin-top: 48px;
+}
+
+.nav-list {
+  float: left;
+  margin-left: 30px;
+}
+
+.nav-list:last-child {
+  margin-right: 4px;
+}
+
+.nav-link {
+  font-size: 14px;
+  color: #fff;
+  display: block;
+}
+
+/***************
+//TITLE-IMAGE
+****************/
+.about-title {
+  background-position: 0 0;
+  height: 13px;
+  width: 69px;
+  margin: 0 auto;
+}
+
+.portfolio-title {
+  background-position: 0 -495px;
+  height: 13px;
+  width: 112px;
+  margin: 0 auto;
+}
+
+.news-title {
+  background-position: 0 -258px;
+  height: 13px;
+  width: 57px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  background-position: 0 -15px;
+  height: 13px;
+  width: 96px;
+  margin: 0 auto;
+}
+
+/***************
+//ABOUT
+****************/
 .about-prof-wrap {
   margin-bottom: 24px;
 }
 
-.section-title {
-  text-align: center;
-}
-
 .about-prof-img {
-  background-position: 0 -44px;
+  background-position: 0 -273px;
   height: 131px;
   width: 131px;
   float: left;
@@ -600,7 +722,6 @@ tt {
 .about-prof-list-group-show {
   font-size: 12px;
   font-weight: 300;
-  font-family: 'ヒラギノ角ゴ Pro W3';
   text-align: left;
   line-height: 2;
 }
@@ -620,20 +741,9 @@ tt {
   margin-bottom: 88px;
 }
 
-.about-prof-bottom-bg {
-  height: 600px;
-  width: 100%;
-  background-image: url("/images/pc-about-bg.png");
-  background-size: cover;
-}
-
-.portfolio-bottom-bg {
-  height: 600px;
-  width: 100%;
-  background-image: url("/images/pc-portfolio-bg.png");
-  background-size: cover;
-}
-
+/***************
+//PORTFOLIO
+****************/
 .portfolio-list-wrap {
   width: 1000px;
 }
@@ -643,215 +753,215 @@ tt {
   margin-bottom: 12px;
 }
 
-.portfolio-img-wrap-search,
-.portfolio-img-wrap-star {
-  margin-left: 12px;
-}
-
 .portfolio-img-wrap-star {
   margin-top: 42px;
   margin-bottom: 88px;
 }
 
 .portfolio-img {
-  float: left;
-  margin-right: 6px;
+  display: inline-block;
+  margin-right: 1.5px;
   margin-bottom: 6px;
+  width: 120px !important;
 }
 
+/***************
+//PORTFOLIO-SPLITE
+****************/
 .portfolio-img_01 {
-  background-position: 0 -266px;
+  background-position: 0 -509px;
   height: 81px;
   width: 122px;
 }
 
 .portfolio-img_02 {
-  background-position: 0 -349px;
+  background-position: 0 -592px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_03 {
-  background-position: 0 -432px;
+  background-position: 0 -675px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_04 {
-  background-position: 0 -515px;
+  background-position: 0 -758px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_05 {
-  background-position: 0 -598px;
+  background-position: 0 -841px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_06 {
-  background-position: 0 -681px;
+  background-position: 0 -924px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_07 {
-  background-position: 0 -764px;
+  background-position: 0 -1007px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_08 {
-  background-position: 0 -847px;
+  background-position: 0 -1090px;
   height: 82px;
   width: 121px;
 }
 
 .portfolio-img_09 {
-  background-position: 0 -930px;
+  background-position: 0 -1173px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_10 {
-  background-position: 0 -1013px;
+  background-position: 0 -1256px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_11 {
-  background-position: 0 -1096px;
+  background-position: 0 -1339px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_12 {
-  background-position: 0 -1179px;
+  background-position: 0 -1422px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_13 {
-  background-position: 0 -1262px;
+  background-position: 0 -1505px;
   height: 82px;
   width: 122px;
 }
 
 .portfolio-img_14 {
-  background-position: 0 -1346px;
+  background-position: 0 -1589px;
   height: 82px;
   width: 121px;
 }
 
 .portfolio-img_15 {
-  background-position: 0 -1429px;
+  background-position: 0 -1672px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-img_16 {
-  background-position: 0 -1512px;
+  background-position: 0 -1755px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_1 {
-  background-position: 0 -1595px;
+  background-position: 0 -1838px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_2 {
-  background-position: 0 -1678px;
+  background-position: 0 -1921px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_3 {
-  background-position: 0 -1761px;
+  background-position: 0 -2004px;
   height: 82px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_4 {
-  background-position: 0 -1845px;
+  background-position: 0 -2088px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_5 {
-  background-position: 0 -1928px;
+  background-position: 0 -2171px;
   height: 81px;
   width: 122px;
 }
 
 .portfolio-konohoshi-img_6 {
-  background-position: 0 -2011px;
+  background-position: 0 -2254px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_7 {
-  background-position: 0 -2094px;
+  background-position: 0 -2337px;
   height: 82px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_8 {
-  background-position: 0 -2177px;
+  background-position: 0 -2420px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_9 {
-  background-position: 0 -2260px;
+  background-position: 0 -2503px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_10 {
-  background-position: 0 -2343px;
+  background-position: 0 -2586px;
   height: 82px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_11 {
-  background-position: 0 -2427px;
+  background-position: 0 -2670px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_12 {
-  background-position: 0 -2510px;
+  background-position: 0 -2753px;
   height: 81px;
   width: 121px;
 }
 
 .portfolio-konohoshi-img_13 {
-  background-position: 0 -2593px;
+  background-position: 0 -2836px;
   height: 82px;
   width: 122px;
 }
 
-.news-bottom-bg {
-  height: 600px;
-  width: 100%;
-  background-image: url("/images/pc-news-bg.png");
-  background-size: cover;
-}
-
+/***************
+//NEWS
+****************/
 .news-list:last-child {
   margin-bottom: 88px;
 }
 
+/***************
+//CONTACT
+****************/
 .contact-text {
   font-size: 12px;
   font-weight: 300;
-  font-family: 'ヒラギノ角ゴ Pro W3';
   text-align: left;
   line-height: 2;
 }
 
+/***************
+//FOOTER
+****************/
 .footer {
   margin-right: 80px;
   margin-left: 100px;
@@ -876,23 +986,26 @@ tt {
 }
 
 .fb-btn {
-  background-position: 0 0;
+  background-position: 0 -77px;
   height: 20px;
   width: 10px;
 }
 
 .insta-btn {
-  background-position: 0 -22px;
+  background-position: 0 -147px;
   height: 20px;
   width: 21px;
 }
 
 .tumblr-btn {
-  background-position: 0 -2805px;
+  background-position: 0 -3173px;
   height: 21px;
   width: 17px;
 }
 
+/***************
+//ANIMATION
+****************/
 .nav-init {
   background: none;
   color: #fff;
@@ -901,9 +1014,16 @@ tt {
 
 .nav-fixed {
   background: #fff;
+  opacity: 0.8;
   color: #4e4e4e;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
+}
+
+.pc-top-logo {
+  background-position: 0 -406px;
+  height: 87px;
+  width: 90px;
 }
 
 .about-prof-bottom-bg,
@@ -921,3 +1041,99 @@ tt {
 .cboxLoadingGraphic {
   display: none !important;
 }
+
+/***************
+//@media
+****************/
+.header {
+  background-image: url("/images/pc-top-bg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 700px;
+}
+
+.about-prof-bottom-bg {
+  height: 600px;
+  background-image: url("/images/pc-about-bg.png");
+  background-size: cover;
+}
+
+.portfolio-bottom-bg {
+  height: 600px;
+  background-image: url("/images/pc-portfolio-bg.png");
+  background-size: cover;
+}
+
+.news-bottom-bg {
+  height: 600px;
+  background-image: url("/images/pc-news-bg.png");
+  background-size: cover;
+}
+
+/*
+
+@media (min-width: 1500px) and (max-width: 1800px) {
+
+		.header {
+		background-image: url('/images/pc-top-bg@1.5x.png');
+		height: 900px;	
+		background-repeat: no-repeat;
+	
+		
+	}
+	
+
+   	.about-prof-bottom-bg {
+		background-image: url('/images/pc-about-bg@1.5x.png');
+		height: 900px;	
+		background-repeat: no-repeat;
+		
+	}
+
+	.portfolio-bottom-bg {
+		background-image: url('/images/pc-portfolio-bg@1.5x.png');
+		height: 900px;	
+		background-repeat: no-repeat;
+	}
+	
+	.news-bottom-bg {
+		background-image: url('/images/pc-news-bg@1.5x.png');
+		height: 900px;	
+		background-repeat: no-repeat;
+	}
+	
+
+}
+
+//1800px以上
+
+@media (min-width:1800px) {
+
+		
+	.header {
+			background-image: url('/images/pc-top-bg@2x.png');
+			
+		}
+		
+
+	   	.about-prof-bottom-bg {
+			background-image: url('/images/pc-about-bg@2x.png');
+			height: 1200px;
+			
+		}
+
+		.portfolio-bottom-bg {
+			background-image: url('/images/pc-portfolio-bg@2x.png');
+			height: 1200px;
+		}
+		
+		.news-bottom-bg {
+			background-image: url('/images/pc-news-bg@2x.png');
+			height: 1200px;
+			
+		}
+	
+}
+
+*/

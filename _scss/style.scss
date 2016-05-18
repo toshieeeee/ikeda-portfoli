@@ -1,11 +1,12 @@
 @charset "UTF-8";
-/*common*/
+
 @import "compass";
 @import "base";
-
 @import "settings";
 
-// font-color: #4e4e4e;
+/***************
+//BASE & COMMON
+****************/
 
 .clearfix:after {
   content: '';
@@ -20,20 +21,47 @@
 	overflow: hidden;
 }
 
+//font-color-setting
 
-.top-title {
-	/*
-	color: #fff;
-	font-size: 36px;
-	font-weight: 100;
-	text-align: center;
-	letter-spacing: 2;
-	*/
-	@include sprite-bg($sprites, 'top-title', 2);
-	margin-bottom: 24px;
-	margin-top: 280px;
-	position:absolute;	
+.about-prof-name,
+.about-prof-list-group-show,
+.about-prof-text,
+.about-prof-list-title,
+.about-prof-list-solo-show,
+.portfolio-img-title_01,
+.portfolio-img-title_02,
+.news-list,
+.contact-text,
+.footer-copy {
+	color: #4e4e4e;
 }
+
+body,
+.about-prof-text ,
+.contact-text{
+
+	font-family:Avenir , 
+	"Open Sans" , 
+	"Helvetica Neue" , 
+	Helvetica , 
+	Arial , 
+	Verdana , 
+	Roboto , 
+	"ヒラギノ角ゴ Pro W3" , 
+	"Hiragino Kaku Gothic Pro" , 
+	"游ゴシック" , 
+	"Yu Gothic" , 
+	"游ゴシック体" , 
+	"YuGothic" , 
+	"Meiryo UI" , 
+	"メイリオ" , 
+	Meiryo , 
+	"ＭＳ Ｐゴシック" ,
+	"MS PGothic" , 
+	sans-serif;
+}
+
+//common-title
 
 .title-border {
 	width: 50px;
@@ -44,73 +72,11 @@
 	margin-bottom :50px;
 }
 
+//common-layout
 
-
-.top-text {
-	
-	color: #fff;
-	font-size: 18px;
-	font-weight: 100;
-	line-height :2;
+.section-title {
 	text-align: center;
-	
-	/*@include sprite-bg($sprites, 'top-text', 2);
-	margin-bottom: 24px;
-	margin-top: 400px;
-	position:absolute;
-	*/	
-		
 }
-
-.header {
-	height: 700px;
-	width: 100%;
-	background-image: url('/images/pc-top-bg.png');
-	background-size: cover;
-	//margin-top: -150px;//test
-}
-
-.top-text-wrap {
-	position: absolute;
-	margin-left: -377px;
-	left: 50%;
-}
-
-.h-top-nav-wrap {
-	width: 100%;
-	height: 100px;
-	//background :#fff;
-	//opacity: 0.8;
-	//z-index: 0;
-	position: fixed;
-	z-index: 100;
-}
-
-.top-logo {
-	@include sprite-bg($sprites, 'pc-top-logo', 2);
-	float: left;
-	margin-left: 100px;
-	margin-top :12px;
-}
-
-.nav-wrap {
-	float: right;
-	margin-top: 48px;
-	margin-right: 80px;
-}
-
-.nav-list {
-	float: left;
-	margin-left: 12px;
-}
-
-.nav-link {
-	font-size: 14px;
-	color: #4e4e4e;
-	font-family: impact;
-}
-
-//ABOUT
 
 .section-about-wrap,
 .section-portfolio-wrap,
@@ -128,14 +94,170 @@
 	margin: 0 auto;
 }
 
-//about-profile
+/***************
+//TOP
+****************/
+
+.top-title {
+	/*
+	color: #fff;
+	font-size: 36px;
+	font-weight: 100;
+	text-align: center;
+	letter-spacing: 2;
+	*/
+	@include sprite-bg($sprites, 'top-title', 2);
+	margin-bottom: 24px;
+	margin-top: 280px;
+	position:absolute;	
+}
+
+.top-text {	
+	/*color: #fff;
+	font-size: 18px;
+	font-weight: 100;
+	line-height :2;
+	text-align: center;
+	*/
+	
+	@include sprite-bg($sprites, 'top-text', 2);
+	margin-bottom: 24px;
+	margin-top: 400px;
+	position:absolute;
+	
+		
+}
+
+.top-btn {
+	@include sprite-bg($sprites, 'top-btn', 2);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -35px;
+	margin-bottom: 40px;
+}
+
+.top-text-wrap {
+	position: absolute;
+	margin-left: -377px;
+	left: 50%;
+}
+
+.top-logo {
+	@include sprite-bg($sprites, 'top-logo', 2);
+	float: left;
+	margin-top :12px;
+}
+
+/***************
+//TOP-NAV
+****************/
+
+.about {
+	@include sprite-bg($sprites, 'f-about-text', 2);
+}
+
+.portpfolio {
+	@include sprite-bg($sprites, 'f-portfolio-text', 2);	
+}
+
+.news {
+	@include sprite-bg($sprites, 'f-news-text', 2);
+}
+
+.contact {
+	@include sprite-bg($sprites, 'f-contact-text', 2);
+}
+
+.fix-about {
+	@include sprite-bg($sprites, 'fix-about-text', 2);
+}
+
+.fix-portpfolio {
+	@include sprite-bg($sprites, 'fix-portfolio-text', 2);	
+}
+
+.fix-news{
+	@include sprite-bg($sprites, 'fix-news-text', 2);
+}
+
+.fix-contact {
+	@include sprite-bg($sprites, 'fix-contact-text', 2);
+}
+
+
+.h-top-nav-wrap {
+	width: 100%;
+	height: 120px;
+	//background :#fff;
+	//opacity: 0.8;
+	//z-index: 0;
+	position: fixed;
+	z-index: 100;
+}
+
+.h-top-nav-inner-wrap {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+.nav-wrap {
+	float: right;
+	margin-top: 48px;
+}
+
+.nav-list {
+	float: left;
+	margin-left: 30px;
+}
+
+.nav-list:last-child {
+	margin-right: 4px;
+}
+
+.nav-link {
+	font-size: 14px;
+	color: #fff;
+	display: block;
+}
+
+
+/***************
+//TITLE-IMAGE
+****************/
+
+.about-title {
+	@include sprite-bg($sprites, 'about-title', 2);
+	margin: 0 auto;
+	
+}
+
+.portfolio-title {
+	@include sprite-bg($sprites, 'portfolio-title', 2);
+	margin: 0 auto;
+}
+
+.news-title {
+	@include sprite-bg($sprites, 'news-title', 2);
+	margin: 0 auto;
+}
+
+.contact-title {
+	@include sprite-bg($sprites, 'contact-title', 2);
+	margin: 0 auto;
+}
+
+
+
+/***************
+//ABOUT
+****************/
+
+
 
 .about-prof-wrap {
 	margin-bottom: 24px;
-}
-
-.section-title {
-	text-align: center;
 }
 
 .about-prof-img {
@@ -156,7 +278,6 @@
 .about-prof-list-group-show {
 	font-size: 12px;
 	font-weight: 300;
-	font-family: 'ヒラギノ角ゴ Pro W3';
 	text-align: left;
 	line-height: 2;
 }
@@ -176,23 +297,10 @@
 	margin-bottom: 88px;
 }
 
-.about-prof-bottom-bg {
-	height: 600px;
-	width: 100%;
-	background-image: url('/images/pc-about-bg.png');
-	background-size: cover;
-}
+/***************
+//PORTFOLIO
+****************/
 
-
-
-//portfolio
-
-.portfolio-bottom-bg {
-	height: 600px;
-	width: 100%;
-	background-image: url('/images/pc-portfolio-bg.png');
-	background-size: cover;
-}
 
 .portfolio-list-wrap {
 	width: 1000px;
@@ -205,7 +313,7 @@
 
 .portfolio-img-wrap-search,
 .portfolio-img-wrap-star {
-	margin-left: 12px;
+	//margin-left: 12px;
 }
 
 .portfolio-img-wrap-star {
@@ -213,13 +321,16 @@
 	margin-bottom: 88px;
 }
 
-
 .portfolio-img { 
-	float: left;
-	margin-right: 6px;
+	display: inline-block;
+	margin-right: 1.5px;
 	margin-bottom: 6px;
+	width: 120px !important;
 }
 
+/***************
+//PORTFOLIO-SPLITE
+****************/
 
 .portfolio-img_01 {
 	@include sprite-bg($sprites, 's01-img_01', 2);
@@ -316,38 +427,38 @@
 	@include sprite-bg($sprites, 's02-img_13', 2);
 }
 
-//news
+/***************
+//NEWS
+****************/
 
-
-.news-bottom-bg {
-	height: 600px;
-	width: 100%;
-	background-image: url('/images/pc-news-bg.png');
-	background-size: cover;
-}
 
 .news-list:last-child {
 	margin-bottom: 88px;
 }
 
-//contact
+/***************
+//CONTACT
+****************/
+
 
 .contact-text {
 	font-size: 12px;
 	font-weight: 300;
-	font-family: 'ヒラギノ角ゴ Pro W3';
 	text-align: left;
 	line-height: 2;
 }
 
-//footer 
+/***************
+//FOOTER
+****************/
+
 	
 .footer {
-		margin-right: 80px;
-		margin-left: 100px;
-		border-top: 1px solid #4e4e4e;
-		margin-top: 110px; 
-		height: 80px;
+	margin-right: 80px;
+	margin-left: 100px;
+	border-top: 1px solid #4e4e4e;
+	margin-top: 110px; 
+	height: 80px;
 }
 
 .footer-copy {
@@ -373,14 +484,13 @@
 	@include sprite-bg($sprites, 'insta-btn', 2);
 }
 
-
 .tumblr-btn {
 	@include sprite-bg($sprites, 'tumblr-btn', 2);
 }
 
-
-
-//animaton
+/***************
+//ANIMATION
+****************/
 
 .nav-init {
 	background: none;
@@ -390,10 +500,15 @@
 
 
 .nav-fixed {
-	background: #fff;
+	background :#fff;
+	opacity: 0.8;
 	color: #4e4e4e;
 	-webkit-transition-duration:1s;
 	-moz-transition-duration:1s;
+ }
+
+ .pc-top-logo {
+ 	@include sprite-bg($sprites, 'pc-top-logo', 2);
  }
 
  .about-prof-bottom-bg,
@@ -411,4 +526,113 @@
  .cboxLoadingGraphic {
  	display: none !important;
  }
+
+
+/***************
+//@media
+****************/
+
+
+.header {
+	background-image: url('/images/pc-top-bg.png');//background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-size: cover;
+	height: 700px;
+}
+
+
+.about-prof-bottom-bg {
+	height: 600px;
+	background-image: url('/images/pc-about-bg.png');//background-size: cover;
+	background-size: cover;
+	//background-repeat: no-repeat;
+}
+
+.portfolio-bottom-bg {
+	height: 600px;
+	background-image: url('/images/pc-portfolio-bg.png');
+	background-size: cover;
+	//background-repeat: no-repeat;
+
+}
+
+.news-bottom-bg {
+	height: 600px;
+	background-image: url('/images/pc-news-bg.png');//background-size: cover;
+	background-size: cover;
+	//background-repeat: no-repeat;
+}
+
+
+
+//1200px 以上
+
+/*
+
+@media (min-width: 1500px) and (max-width: 1800px) {
+
+		.header {
+		background-image: url('/images/pc-top-bg@1.5x.png');
+		height: 900px;	
+		background-repeat: no-repeat;
+	
+		
+	}
+	
+
+   	.about-prof-bottom-bg {
+		background-image: url('/images/pc-about-bg@1.5x.png');
+		height: 900px;	
+		background-repeat: no-repeat;
+		
+	}
+
+	.portfolio-bottom-bg {
+		background-image: url('/images/pc-portfolio-bg@1.5x.png');
+		height: 900px;	
+		background-repeat: no-repeat;
+	}
+	
+	.news-bottom-bg {
+		background-image: url('/images/pc-news-bg@1.5x.png');
+		height: 900px;	
+		background-repeat: no-repeat;
+	}
+	
+
+}
+
+//1800px以上
+
+@media (min-width:1800px) {
+
+		
+	.header {
+			background-image: url('/images/pc-top-bg@2x.png');
+			
+		}
+		
+
+	   	.about-prof-bottom-bg {
+			background-image: url('/images/pc-about-bg@2x.png');
+			height: 1200px;
+			
+		}
+
+		.portfolio-bottom-bg {
+			background-image: url('/images/pc-portfolio-bg@2x.png');
+			height: 1200px;
+		}
+		
+		.news-bottom-bg {
+			background-image: url('/images/pc-news-bg@2x.png');
+			height: 1200px;
+			
+		}
+	
+}
+
+*/
+
 
