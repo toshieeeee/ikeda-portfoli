@@ -222,6 +222,10 @@ body,
 	display: block;
 }
 
+.nav-list:hover {
+	opacity: 0.4;
+}
+
 
 /***************
 //TITLE-IMAGE
@@ -480,6 +484,10 @@ body,
 	@include sprite-bg($sprites, 'fb-btn', 2);
 }
 
+.sns:hover {
+	opacity: 0.7;
+}
+
 .insta-btn {
 	@include sprite-bg($sprites, 'insta-btn', 2);
 }
@@ -562,6 +570,17 @@ body,
 	background-image: url('/images/pc-news-bg.png');//background-size: cover;
 	background-size: cover;
 	//background-repeat: no-repeat;
+}
+
+.is-current {
+	display: none;
+	position: absolute;
+    //background: #73C4DB;
+    background: #000;
+    height: 2px;
+    width: 71px;
+    bottom: 50px;
+    margin-left: 23px;
 }
 
 
