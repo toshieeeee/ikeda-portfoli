@@ -563,13 +563,13 @@ body,
   position: absolute;
   bottom: 0;
   left: 50%;
-  margin-left: -35px;
+  margin-left: -17.5px;
   margin-bottom: 40px;
 }
 
 .top-text-wrap {
   position: absolute;
-  margin-left: -377px;
+  margin-left: -340.5px;
   left: 50%;
 }
 
@@ -634,7 +634,7 @@ body,
 
 .h-top-nav-wrap {
   width: 100%;
-  height: 120px;
+  height: 110px;
   position: fixed;
   z-index: 100;
 }
@@ -767,6 +767,11 @@ body,
   margin-right: 1.5px;
   margin-bottom: 6px;
   width: 120px !important;
+}
+
+.portfolio-img-wrap-search > a:hover,
+.portfolio-img-wrap-star > a:hover {
+  opacity: 0.7;
 }
 
 /***************
@@ -1083,9 +1088,9 @@ body,
   display: none;
   position: absolute;
   background: #000;
-  height: 2px;
+  height: 1px;
   width: 71px;
-  bottom: 50px;
+  bottom: 45px;
   margin-left: 23px;
 }
 
