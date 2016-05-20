@@ -490,7 +490,7 @@ tt {
 body,
 .about-prof-text,
 .contact-text {
-  font-family: Avenir ,  "Open Sans" ,  "Helvetica Neue" ,  Helvetica ,  Arial ,  Verdana ,  Roboto ,  "ヒラギノ角ゴ Pro W3" ,  "Hiragino Kaku Gothic Pro" ,  "游ゴシック" ,  "Yu Gothic" ,  "游ゴシック体" ,  "YuGothic" ,  "Meiryo UI" ,  "メイリオ" ,  Meiryo ,  "ＭＳ Ｐゴシック" , "MS PGothic" ,  sans-serif;
+  font-family: Avenir ,  'Open Sans' ,  'Helvetica Neue' ,  Helvetica ,  Arial ,  Verdana ,  Roboto ,  'ヒラギノ角ゴ Pro W3' ,  'Hiragino Kaku Gothic Pro' ,  '游ゴシック' ,  'Yu Gothic' ,  '游ゴシック体' ,  'YuGothic' ,  'Meiryo UI' ,  'メイリオ' ,  Meiryo ,  'ＭＳ Ｐゴシック' , 'MS PGothic' ,  sans-serif;
 }
 
 .title-border {
@@ -526,13 +526,6 @@ body,
 //TOP
 ****************/
 .top-title {
-  /*
-  color: #fff;
-  font-size: 36px;
-  font-weight: 100;
-  text-align: center;
-  letter-spacing: 2;
-  */
   background-position: 0 -3138px;
   height: 33px;
   width: 796px;
@@ -542,12 +535,6 @@ body,
 }
 
 .top-text {
-  /*color: #fff;
-  font-size: 18px;
-  font-weight: 100;
-  line-height :2;
-  text-align: center;
-  */
   background-position: 0 -3045px;
   height: 91px;
   width: 681px;
@@ -1128,6 +1115,7 @@ body,
 	
 
 }
+
 
 //1800px以上
 

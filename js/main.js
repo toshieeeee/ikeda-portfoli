@@ -4,7 +4,7 @@
 lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
-})
+});
 
 /*各セクションの背景の表示速度調整*/
 
