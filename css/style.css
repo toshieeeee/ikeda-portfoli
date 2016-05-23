@@ -652,7 +652,7 @@ body,
 }
 
 .nav-list:hover {
-  opacity: 0.4;
+  opacity: .4;
 }
 
 /***************
@@ -758,7 +758,7 @@ body,
 
 .portfolio-img-wrap-search > a:hover,
 .portfolio-img-wrap-star > a:hover {
-  opacity: 0.7;
+  opacity: .7;
 }
 
 /***************
@@ -988,7 +988,7 @@ body,
 }
 
 .sns:hover {
-  opacity: 0.7;
+  opacity: .7;
 }
 
 .insta-btn {
@@ -1009,15 +1009,16 @@ body,
 .nav-init {
   background: none;
   color: #fff;
-  -webkit-transition-duration: 0.2s;
+  -webkit-transition-duration: .2s;
 }
 
 .nav-fixed {
   background: #fff;
-  opacity: 0.8;
+  opacity: .8;
   color: #4e4e4e;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
 }
 
 .pc-top-logo {
@@ -1035,6 +1036,8 @@ body,
 .show-each-section {
   opacity: 1;
   -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -ms-transition-duration: 1s;
 }
 
 .cboxLoadingOverlay,
@@ -1074,7 +1077,7 @@ body,
 .is-current {
   display: none;
   position: absolute;
-  background: #000;
+  background: #4e4e4e;
   height: 1px;
   width: 71px;
   bottom: 45px;
