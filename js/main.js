@@ -78,9 +78,10 @@ document.addEventListener( 'DOMContentLoaded', function(){
 
 $('a[href^=#]').click(function() {
   var speed = 400; 
+  var adjustmentPosition = 120;
   var href= $(this).attr("href");
   var target = $(href == "#" || href == "" ? 'html' : href);
-  var position = target.offset().top - 120;
+  var position = target.offset().top - adjustmentPosition;
 
   $('body,html').animate({scrollTop:position}, speed, 'swing');
   return false;
