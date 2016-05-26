@@ -1,8 +1,8 @@
-@charset "UTF-8";
+@charset 'UTF-8';
 
-@import "compass";
-@import "base";
-@import "settings";
+@import 'compass';
+@import 'base';
+@import 'settings';
 
 /***************
 //BASE & COMMON
@@ -15,13 +15,17 @@
 }
 
 .is-sprite {
-	@include sprite-base-bg($sprites, $sprites-img, 2);
-	display: block;
-	text-indent: -9999px;
-	overflow: hidden;
+  @include sprite-base-bg($sprites, $sprites-img, 2);
+  display: block;
+  text-indent: -9999px;
+  overflow: hidden;
 }
 
 //font-color-setting
+
+$base-font-color: #4e4e4e;
+$white: #fff;
+$black: #000;
 
 .about-prof-name,
 .about-prof-list-group-show,
@@ -33,56 +37,39 @@
 .news-list,
 .contact-text,
 .footer-copy {
-	color: #4e4e4e;
+  color: $base-font-color;
 }
 
 body,
-.about-prof-text ,
-.contact-text{
-
-	font-family:Avenir , 
-	"Open Sans" , 
-	"Helvetica Neue" , 
-	Helvetica , 
-	Arial , 
-	Verdana , 
-	Roboto , 
-	"ヒラギノ角ゴ Pro W3" , 
-	"Hiragino Kaku Gothic Pro" , 
-	"游ゴシック" , 
-	"Yu Gothic" , 
-	"游ゴシック体" , 
-	"YuGothic" , 
-	"Meiryo UI" , 
-	"メイリオ" , 
-	Meiryo , 
-	"ＭＳ Ｐゴシック" ,
-	"MS PGothic" , 
-	sans-serif;
+.about-prof-text,
+.contact-text {
+  font-family: Avenir ,  'Open Sans' ,  'Helvetica Neue' ,  Helvetica ,  Arial ,  Verdana ,  Roboto ,  'ヒラギノ角ゴ Pro W3' ,  'Hiragino Kaku Gothic Pro' ,  '游ゴシック' ,  'Yu Gothic' ,  '游ゴシック体' ,  'YuGothic' ,  'Meiryo UI' ,  'メイリオ' ,  Meiryo ,  'ＭＳ Ｐゴシック' , 'MS PGothic' ,  sans-serif;
 }
 
 //common-title
 
 .title-border {
-	width: 50px;
-	height: 1px;
-	background :#4e4e4e;
-	margin:0 auto;
-	margin-top: 10px;
-	margin-bottom :50px;
+  width: 50px;
+  height: 1px;
+  background: $base-font-color;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
+
+
 
 //common-layout
 
 .section-title {
-	text-align: center;
+  text-align: center;
 }
 
 .section-about-wrap,
 .section-portfolio-wrap,
 .section-news-wrap,
 .section-contact-wrap {
-	margin-top: 88px;
+  margin-top: 88px;
 }
 
 .about-prof-wrap,
@@ -90,8 +77,8 @@ body,
 .portfolio-list-wrap,
 .news-list-wrap,
 .contact-text-wrap {
-	width: 500px;
-	margin: 0 auto;
+  width: 500px;
+  margin: 0 auto;
 }
 
 /***************
@@ -99,54 +86,41 @@ body,
 ****************/
 
 .top-title {
-	/*
-	color: #fff;
-	font-size: 36px;
-	font-weight: 100;
-	text-align: center;
-	letter-spacing: 2;
-	*/
-	@include sprite-bg($sprites, 'top-title', 2);
-	margin-bottom: 24px;
-	margin-top: 280px;
-	position:absolute;	
+
+  @include sprite-bg($sprites, 'top-title', 2);
+  margin-bottom: 24px;
+  margin-top: 280px;
+  position: absolute;
 }
 
-.top-text {	
-	/*color: #fff;
-	font-size: 18px;
-	font-weight: 100;
-	line-height :2;
-	text-align: center;
-	*/
-	
-	@include sprite-bg($sprites, 'top-text', 2);
-	margin-bottom: 24px;
-	margin-top: 400px;
-	position:absolute;
-	
-		
+.top-text {
+
+  @include sprite-bg($sprites, 'top-text', 2);
+  margin-bottom: 24px;
+  margin-top: 400px;
+  position: absolute;
 }
 
 .top-btn {
-	@include sprite-bg($sprites, 'top-btn', 2);
-	position: absolute;
-	bottom: 0;
-	left: 50%;
-	margin-left: -35px;
-	margin-bottom: 40px;
+  @include sprite-bg($sprites, 'top-btn', 2);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -17.5px;
+  margin-bottom: 40px;
 }
 
 .top-text-wrap {
-	position: absolute;
-	margin-left: -377px;
-	left: 50%;
+  position: absolute;
+  margin-left: -340.5px;
+  left: 50%;
 }
 
 .top-logo {
-	@include sprite-bg($sprites, 'top-logo', 2);
-	float: left;
-	margin-top :12px;
+  @include sprite-bg($sprites, 'top-logo', 2);
+
+  float: left;
+  margin-top: 12px;
 }
 
 /***************
@@ -154,178 +128,178 @@ body,
 ****************/
 
 .about {
-	@include sprite-bg($sprites, 'f-about-text', 2);
+  @include sprite-bg($sprites, 'f-about-text', 2);
 }
 
 .portpfolio {
-	@include sprite-bg($sprites, 'f-portfolio-text', 2);	
+  @include sprite-bg($sprites, 'f-portfolio-text', 2);
 }
 
 .news {
-	@include sprite-bg($sprites, 'f-news-text', 2);
+  @include sprite-bg($sprites, 'f-news-text', 2);
 }
 
 .contact {
-	@include sprite-bg($sprites, 'f-contact-text', 2);
+  @include sprite-bg($sprites, 'f-contact-text', 2);
 }
 
 .fix-about {
-	@include sprite-bg($sprites, 'fix-about-text', 2);
+  @include sprite-bg($sprites, 'fix-about-text', 2);
 }
 
 .fix-portpfolio {
-	@include sprite-bg($sprites, 'fix-portfolio-text', 2);	
+  @include sprite-bg($sprites, 'fix-portfolio-text', 2);
 }
 
-.fix-news{
-	@include sprite-bg($sprites, 'fix-news-text', 2);
+.fix-news {
+  @include sprite-bg($sprites, 'fix-news-text', 2);
 }
 
 .fix-contact {
-	@include sprite-bg($sprites, 'fix-contact-text', 2);
+  @include sprite-bg($sprites, 'fix-contact-text', 2);
 }
 
-
 .h-top-nav-wrap {
-	width: 100%;
-	height: 120px;
-	//background :#fff;
-	//opacity: 0.8;
-	//z-index: 0;
-	position: fixed;
-	z-index: 100;
+  width: 100%;
+  height: 110px;
+
+  //background :$white;
+  //opacity: 0.8;
+  //z-index: 0;
+  position: fixed;
+  z-index: 100;
 }
 
 .h-top-nav-inner-wrap {
-	width: 1000px;
-	margin: 0 auto;
+  width: 1000px;
+  margin: 0 auto;
 }
 
-
 .nav-wrap {
-	float: right;
-	margin-top: 48px;
+  float: right;
+  margin-top: 48px;
 }
 
 .nav-list {
-	float: left;
-	margin-left: 30px;
+  float: left;
+  margin-left: 30px;
 }
 
 .nav-list:last-child {
-	margin-right: 4px;
+  margin-right: 4px;
 }
 
 .nav-link {
-	font-size: 14px;
-	color: #fff;
-	display: block;
+  font-size: 14px;
+  color: $white;
+  display: block;
 }
 
+.nav-list:hover {
+  opacity: .4;
+}
 
 /***************
 //TITLE-IMAGE
 ****************/
 
 .about-title {
-	@include sprite-bg($sprites, 'about-title', 2);
-	margin: 0 auto;
-	
+  @include sprite-bg($sprites, 'about-title', 2);
+  margin: 0 auto;
 }
 
 .portfolio-title {
-	@include sprite-bg($sprites, 'portfolio-title', 2);
-	margin: 0 auto;
+  @include sprite-bg($sprites, 'portfolio-title', 2);
+
+  margin: 0 auto;
 }
 
 .news-title {
-	@include sprite-bg($sprites, 'news-title', 2);
-	margin: 0 auto;
+  @include sprite-bg($sprites, 'news-title', 2);
+
+  margin: 0 auto;
 }
 
 .contact-title {
-	@include sprite-bg($sprites, 'contact-title', 2);
-	margin: 0 auto;
+  @include sprite-bg($sprites, 'contact-title', 2);
+
+  margin: 0 auto;
 }
-
-
 
 /***************
 //ABOUT
 ****************/
 
-
-
 .about-prof-wrap {
-	margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .about-prof-img {
-	@include sprite-bg($sprites, 'pc-about-profile', 2);
-	float: left;
+  @include sprite-bg($sprites, 'pc-about-profile', 2);
+
+  float: left;
 }
 
 .about-prof-name {
-	font-size: 14px;
-	font-weight: 600;
-	float: left;
-	margin-left: 32px;
-	margin-top: 42px;
+  font-size: 14px;
+  font-weight: 600;
+  float: left;
+  margin-left: 32px;
+  margin-top: 42px;
 }
 
 .about-prof-text,
 .about-prof-list-solo-show,
 .about-prof-list-group-show {
-	font-size: 12px;
-	font-weight: 300;
-	text-align: left;
-	line-height: 2;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 2;
 }
 
 .about-prof-list-title {
-	font-size: 14px;
-	font-weight: 600;
-	margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 14px;
 }
 
 .about-prof-text,
 .about-prof-list-solo-show:last-child {
-	margin-bottom: 36px;
+  margin-bottom: 36px;
 }
 
 .about-prof-list-group-show:last-child {
-	margin-bottom: 88px;
+  margin-bottom: 88px;
 }
 
 /***************
 //PORTFOLIO
 ****************/
 
-
 .portfolio-list-wrap {
-	width: 1000px;
+  width: 1000px;
 }
 
 .portfolio-img-title_01,
 .portfolio-img-title_02 {
-	margin-bottom: 12px;
-}
-
-.portfolio-img-wrap-search,
-.portfolio-img-wrap-star {
-	//margin-left: 12px;
+  margin-bottom: 12px;
 }
 
 .portfolio-img-wrap-star {
-	margin-top: 42px;
-	margin-bottom: 88px;
+  margin-top: 42px;
+  margin-bottom: 88px;
 }
 
-.portfolio-img { 
-	display: inline-block;
-	margin-right: 1.5px;
-	margin-bottom: 6px;
-	width: 120px !important;
+.portfolio-img {
+  display: inline-block;
+  margin-right: 1.5px;
+  margin-bottom: 6px;
+  width: 120px !important;
+}
+
+.portfolio-img-wrap-search > a:hover,
+.portfolio-img-wrap-star > a:hover {
+  opacity: .7;
 }
 
 /***************
@@ -333,159 +307,181 @@ body,
 ****************/
 
 .portfolio-img_01 {
-	@include sprite-bg($sprites, 's01-img_01', 2);
+  @include sprite-bg($sprites, 's01-img_01', 2);
 }
+
 .portfolio-img_02 {
-	@include sprite-bg($sprites, 's01-img_02', 2);
+  @include sprite-bg($sprites, 's01-img_02', 2);
 }
 
 .portfolio-img_03 {
-	@include sprite-bg($sprites, 's01-img_03', 2);
+  @include sprite-bg($sprites, 's01-img_03', 2);
 }
 
 .portfolio-img_04 {
-	@include sprite-bg($sprites, 's01-img_04', 2);
+  @include sprite-bg($sprites, 's01-img_04', 2);
 }
 
 .portfolio-img_05 {
-	@include sprite-bg($sprites, 's01-img_05', 2);
+  @include sprite-bg($sprites, 's01-img_05', 2);
 }
 
 .portfolio-img_06 {
-	@include sprite-bg($sprites, 's01-img_06', 2);
+  @include sprite-bg($sprites, 's01-img_06', 2);
 }
 
 .portfolio-img_07 {
-	@include sprite-bg($sprites, 's01-img_07', 2);
+  @include sprite-bg($sprites, 's01-img_07', 2);
 }
 
 .portfolio-img_08 {
-	@include sprite-bg($sprites, 's01-img_08', 2);
+  @include sprite-bg($sprites, 's01-img_08', 2);
 }
+
 .portfolio-img_09 {
-	@include sprite-bg($sprites, 's01-img_09', 2);
+  @include sprite-bg($sprites, 's01-img_09', 2);
 }
+
 .portfolio-img_10 {
-	@include sprite-bg($sprites, 's01-img_10', 2);
+  @include sprite-bg($sprites, 's01-img_10', 2);
 }
+
 .portfolio-img_11 {
-	@include sprite-bg($sprites, 's01-img_11', 2);
+  @include sprite-bg($sprites, 's01-img_11', 2);
 }
+
 .portfolio-img_12 {
-	@include sprite-bg($sprites, 's01-img_12', 2);
+  @include sprite-bg($sprites, 's01-img_12', 2);
 }
+
 .portfolio-img_13 {
-	@include sprite-bg($sprites, 's01-img_13', 2);
+  @include sprite-bg($sprites, 's01-img_13', 2);
 }
+
 .portfolio-img_14 {
-	@include sprite-bg($sprites, 's01-img_14', 2);
+  @include sprite-bg($sprites, 's01-img_14', 2);
 }
+
 .portfolio-img_15 {
-	@include sprite-bg($sprites, 's01-img_15', 2);
+  @include sprite-bg($sprites, 's01-img_15', 2);
 }
+
 .portfolio-img_16 {
-	@include sprite-bg($sprites, 's01-img_16', 2);
+  @include sprite-bg($sprites, 's01-img_16', 2);
 }
 
 .portfolio-konohoshi-img_1 {
-	@include sprite-bg($sprites, 's02-img_01', 2);
+  @include sprite-bg($sprites, 's02-img_01', 2);
 }
+
 .portfolio-konohoshi-img_2 {
-	@include sprite-bg($sprites, 's02-img_02', 2);
+  @include sprite-bg($sprites, 's02-img_02', 2);
 }
+
 .portfolio-konohoshi-img_3 {
-	@include sprite-bg($sprites, 's02-img_03', 2);
+  @include sprite-bg($sprites, 's02-img_03', 2);
 }
+
 .portfolio-konohoshi-img_4 {
-	@include sprite-bg($sprites, 's02-img_04', 2);
+  @include sprite-bg($sprites, 's02-img_04', 2);
 }
+
 .portfolio-konohoshi-img_5 {
-	@include sprite-bg($sprites, 's02-img_05', 2);
+  @include sprite-bg($sprites, 's02-img_05', 2);
 }
+
 .portfolio-konohoshi-img_6 {
-	@include sprite-bg($sprites, 's02-img_06', 2);
+  @include sprite-bg($sprites, 's02-img_06', 2);
 }
+
 .portfolio-konohoshi-img_7 {
-	@include sprite-bg($sprites, 's02-img_07', 2);
+  @include sprite-bg($sprites, 's02-img_07', 2);
 }
+
 .portfolio-konohoshi-img_8 {
-	@include sprite-bg($sprites, 's02-img_08', 2);
+  @include sprite-bg($sprites, 's02-img_08', 2);
 }
+
 .portfolio-konohoshi-img_9 {
-	@include sprite-bg($sprites, 's02-img_09', 2);
+  @include sprite-bg($sprites, 's02-img_09', 2);
 }
+
 .portfolio-konohoshi-img_10 {
-	@include sprite-bg($sprites, 's02-img_10', 2);
+  @include sprite-bg($sprites, 's02-img_10', 2);
 }
+
 .portfolio-konohoshi-img_11 {
-	@include sprite-bg($sprites, 's02-img_11', 2);
+  @include sprite-bg($sprites, 's02-img_11', 2);
 }
+
 .portfolio-konohoshi-img_12 {
-	@include sprite-bg($sprites, 's02-img_12', 2);
+  @include sprite-bg($sprites, 's02-img_12', 2);
 }
+
 .portfolio-konohoshi-img_13 {
-	@include sprite-bg($sprites, 's02-img_13', 2);
+  @include sprite-bg($sprites, 's02-img_13', 2);
 }
 
 /***************
 //NEWS
 ****************/
 
-
 .news-list:last-child {
-	margin-bottom: 88px;
+  margin-bottom: 88px;
 }
 
 /***************
 //CONTACT
 ****************/
 
-
 .contact-text {
-	font-size: 12px;
-	font-weight: 300;
-	text-align: left;
-	line-height: 2;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: left;
+  line-height: 2;
 }
 
 /***************
 //FOOTER
 ****************/
 
-	
 .footer {
-	margin-right: 80px;
-	margin-left: 100px;
-	border-top: 1px solid #4e4e4e;
-	margin-top: 110px; 
-	height: 80px;
+  margin-right: 80px;
+  margin-left: 100px;
+  border-top: 1px solid $base-font-color;
+  margin-top: 110px;
+  height: 80px;
 }
 
 .footer-copy {
-	text-align: center;
-	line-height: 80px;
+  text-align: center;
+  line-height: 80px;
 }
 
 .sns-wrap {
-	float: right;
-	margin-top: -50px;
+  float: right;
+  margin-top: -50px;
 }
 
 .sns {
-	float: left;
-	margin-left: 12px;
+  float: left;
+  margin-left: 12px;
 }
 
 .fb-btn {
-	@include sprite-bg($sprites, 'fb-btn', 2);
+  @include sprite-bg($sprites, 'fb-btn', 2);
+}
+
+.sns:hover {
+  opacity: .7;
 }
 
 .insta-btn {
-	@include sprite-bg($sprites, 'insta-btn', 2);
+  @include sprite-bg($sprites, 'insta-btn', 2);
 }
 
 .tumblr-btn {
-	@include sprite-bg($sprites, 'tumblr-btn', 2);
+  @include sprite-bg($sprites, 'tumblr-btn', 2);
 }
 
 /***************
@@ -493,77 +489,92 @@ body,
 ****************/
 
 .nav-init {
-	background: none;
-	color: #fff;
-	-webkit-transition-duration: 0.2s;
- }
-
-
-.nav-fixed {
-	background :#fff;
-	opacity: 0.8;
-	color: #4e4e4e;
-	-webkit-transition-duration:1s;
-	-moz-transition-duration:1s;
- }
-
- .pc-top-logo {
- 	@include sprite-bg($sprites, 'pc-top-logo', 2);
- }
-
- .about-prof-bottom-bg,
- .portfolio-bottom-bg,
- .news-bottom-bg {
-	opacity: 0;
+  background: none;
+  color: $white;
+  -webkit-transition-duration: .2s;
 }
 
- .show-each-section {
- 	opacity: 1;
- 	-webkit-transition-duration: 3s;
- }
+.nav-fixed {
+  background: $white;
+  opacity: .8;
+  color: $base-font-color;
+  -webkit-transition-duration: 1s;
+  -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
+}
 
-.cboxLoadingOverlay, 
- .cboxLoadingGraphic {
- 	display: none !important;
- }
+.pc-top-logo {
+  @include sprite-bg($sprites, 'pc-top-logo', 2);
+}
 
+.about-prof-bottom-bg,
+.portfolio-bottom-bg,
+.news-bottom-bg {
+  opacity: 0;
+}
+
+.show-each-section {
+  opacity: 1;
+  -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -ms-transition-duration: 1s;
+}
+
+.cboxLoadingOverlay,
+.cboxLoadingGraphic {
+  display: none !important;
+}
 
 /***************
 //@media
 ****************/
 
-
 .header {
-	background-image: url('/images/pc-top-bg.png');//background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	background-size: cover;
-	height: 700px;
+  background-image: url('/images/pc-top-bg.png');
+
+  //background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  height: 700px;
 }
 
-
 .about-prof-bottom-bg {
-	height: 600px;
-	background-image: url('/images/pc-about-bg.png');//background-size: cover;
-	background-size: cover;
-	//background-repeat: no-repeat;
+  height: 600px;
+  background-image: url('/images/pc-about-bg.png');
+
+  //background-size: cover;
+  background-size: cover;
+
+  //background-repeat: no-repeat;
 }
 
 .portfolio-bottom-bg {
-	height: 600px;
-	background-image: url('/images/pc-portfolio-bg.png');
-	background-size: cover;
-	//background-repeat: no-repeat;
+  height: 600px;
+  background-image: url('/images/pc-portfolio-bg.png');
+  background-size: cover;
 
+  //background-repeat: no-repeat;
 }
 
 .news-bottom-bg {
-	height: 600px;
-	background-image: url('/images/pc-news-bg.png');//background-size: cover;
-	background-size: cover;
-	//background-repeat: no-repeat;
+  height: 600px;
+  background-image: url('/images/pc-news-bg.png');
+  background-size: cover;
+
 }
 
+.is-current {
+  display: none;
+  position: absolute;
+
+  //background: #73C4DB;
+  background: $base-font-color;
+  height: 1px;
+  width: 71px;
+  bottom: 45px;
+  margin-left: 23px;
+}
 
 
 //1200px 以上
@@ -603,6 +614,7 @@ body,
 
 }
 
+
 //1800px以上
 
 @media (min-width:1800px) {
@@ -634,5 +646,3 @@ body,
 }
 
 */
-
-

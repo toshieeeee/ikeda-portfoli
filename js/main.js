@@ -4,7 +4,7 @@
 lightbox.option({
     'resizeDuration': 200,
     'wrapAround': true
-})
+});
 
 /*各セクションの背景の表示速度調整*/
 
@@ -13,7 +13,7 @@ var portfolioHeight = $('.portfolio-bottom-bg').offset().top - 750;
 var newHeight = $('.news-bottom-bg').offset().top - 750;
 
 
-//スクロールイベント
+//スクロールイベント - 各セクション
 
 
 $(window).scroll(function(){
@@ -28,8 +28,6 @@ $(window).scroll(function(){
 		$('.portpfolio').addClass('fix-portpfolio');
 		$('.news').addClass('fix-news');
 		$('.contact').addClass('fix-contact');
-
-
 
 	}else{
 		$('.h-top-nav-wrap').addClass('nav-init');
@@ -79,16 +77,106 @@ document.addEventListener( 'DOMContentLoaded', function(){
 }, false );
 
 $('a[href^=#]').click(function() {
-  // スクロールの速度
-  var speed = 400; // ミリ秒
-  // アンカーの値取得
+  var speed = 400; 
+  var adjustmentPosition = 120;
   var href= $(this).attr("href");
-  // 移動先を取得
   var target = $(href == "#" || href == "" ? 'html' : href);
-  // 移動先を数値で取得
-  var position = target.offset().top - 120;
-  // スムーススクロール
+  var position = target.offset().top - adjustmentPosition;
+
   $('body,html').animate({scrollTop:position}, speed, 'swing');
   return false;
 });
+
+/*******************************
+NAV -　スクロールイベント
+********************************/
+
+
+var	currentNum = 0,
+	speed = 1000,
+ 	$navLink = $('.nav-link'),
+	$currentBorder = $('.is-current'); // border
+
+
+//NAVオブジェクト
+
+var navData = [{
+
+		num : 0,
+		sectionPos : 600,
+		navPos : 23,
+
+	},
+	{
+
+		num : 1,
+		sectionPos : 2180,
+		navPos : 124,
+
+	},
+	{
+
+		num : 2,
+		sectionPos : 3500,
+		navPos : 228,
+
+	},
+	{
+		num : 3,
+		sectionPos : 4100,
+		navPos : 317,
+
+	}
+
+	];
+
+//Scroll メソッド
+
+function scrollUpdate(num){
+
+	currentNum = num;
+	$currentBorder.css('margin-left', navData[num].navPos);
+}
+
+//イベントハンドラ
+
+$(window).scroll(function(){
+
+    scrollPosition = $(window).scrollTop();
+
+    if(scrollPosition > navData[0].sectionPos){
+
+    	$('.is-current').css('display','block');
+
+    }else{
+
+    	$('.is-current').css('display','none');
+
+    }
+    
+    if(scrollPosition >= 0 && scrollPosition <= navData[1].sectionPos){
+
+        scrollUpdate(0);
+
+	}
+
+	if(scrollPosition >= navData[1].sectionPos && scrollPosition <= navData[2].sectionPos){
+
+	    scrollUpdate(1); 
+
+		}
+
+	if(scrollPosition >= navData[2].sectionPos && scrollPosition <= navData[3].sectionPos){
+
+	    scrollUpdate(2); 
+
+		}
+
+ 	if(scrollPosition >= navData[3].sectionPos){
+
+ 	    scrollUpdate(3); 
+
+	}
+
+});	
 

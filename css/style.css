@@ -490,7 +490,7 @@ tt {
 body,
 .about-prof-text,
 .contact-text {
-  font-family: Avenir ,  "Open Sans" ,  "Helvetica Neue" ,  Helvetica ,  Arial ,  Verdana ,  Roboto ,  "ヒラギノ角ゴ Pro W3" ,  "Hiragino Kaku Gothic Pro" ,  "游ゴシック" ,  "Yu Gothic" ,  "游ゴシック体" ,  "YuGothic" ,  "Meiryo UI" ,  "メイリオ" ,  Meiryo ,  "ＭＳ Ｐゴシック" , "MS PGothic" ,  sans-serif;
+  font-family: Avenir ,  'Open Sans' ,  'Helvetica Neue' ,  Helvetica ,  Arial ,  Verdana ,  Roboto ,  'ヒラギノ角ゴ Pro W3' ,  'Hiragino Kaku Gothic Pro' ,  '游ゴシック' ,  'Yu Gothic' ,  '游ゴシック体' ,  'YuGothic' ,  'Meiryo UI' ,  'メイリオ' ,  Meiryo ,  'ＭＳ Ｐゴシック' , 'MS PGothic' ,  sans-serif;
 }
 
 .title-border {
@@ -526,13 +526,6 @@ body,
 //TOP
 ****************/
 .top-title {
-  /*
-  color: #fff;
-  font-size: 36px;
-  font-weight: 100;
-  text-align: center;
-  letter-spacing: 2;
-  */
   background-position: 0 -3138px;
   height: 33px;
   width: 796px;
@@ -542,12 +535,6 @@ body,
 }
 
 .top-text {
-  /*color: #fff;
-  font-size: 18px;
-  font-weight: 100;
-  line-height :2;
-  text-align: center;
-  */
   background-position: 0 -3045px;
   height: 91px;
   width: 681px;
@@ -563,13 +550,13 @@ body,
   position: absolute;
   bottom: 0;
   left: 50%;
-  margin-left: -35px;
+  margin-left: -17.5px;
   margin-bottom: 40px;
 }
 
 .top-text-wrap {
   position: absolute;
-  margin-left: -377px;
+  margin-left: -340.5px;
   left: 50%;
 }
 
@@ -634,7 +621,7 @@ body,
 
 .h-top-nav-wrap {
   width: 100%;
-  height: 120px;
+  height: 110px;
   position: fixed;
   z-index: 100;
 }
@@ -662,6 +649,10 @@ body,
   font-size: 14px;
   color: #fff;
   display: block;
+}
+
+.nav-list:hover {
+  opacity: .4;
 }
 
 /***************
@@ -763,6 +754,11 @@ body,
   margin-right: 1.5px;
   margin-bottom: 6px;
   width: 120px !important;
+}
+
+.portfolio-img-wrap-search > a:hover,
+.portfolio-img-wrap-star > a:hover {
+  opacity: .7;
 }
 
 /***************
@@ -991,6 +987,10 @@ body,
   width: 10px;
 }
 
+.sns:hover {
+  opacity: .7;
+}
+
 .insta-btn {
   background-position: 0 -147px;
   height: 20px;
@@ -1009,15 +1009,16 @@ body,
 .nav-init {
   background: none;
   color: #fff;
-  -webkit-transition-duration: 0.2s;
+  -webkit-transition-duration: .2s;
 }
 
 .nav-fixed {
   background: #fff;
-  opacity: 0.8;
+  opacity: .8;
   color: #4e4e4e;
   -webkit-transition-duration: 1s;
   -moz-transition-duration: 1s;
+  -ms-transition-duration: 1s;
 }
 
 .pc-top-logo {
@@ -1035,6 +1036,8 @@ body,
 .show-each-section {
   opacity: 1;
   -webkit-transition-duration: 3s;
+  -moz-transition-duration: 3s;
+  -ms-transition-duration: 1s;
 }
 
 .cboxLoadingOverlay,
@@ -1071,6 +1074,16 @@ body,
   background-size: cover;
 }
 
+.is-current {
+  display: none;
+  position: absolute;
+  background: #4e4e4e;
+  height: 1px;
+  width: 71px;
+  bottom: 45px;
+  margin-left: 23px;
+}
+
 /*
 
 @media (min-width: 1500px) and (max-width: 1800px) {
@@ -1105,6 +1118,7 @@ body,
 	
 
 }
+
 
 //1800px以上
 
