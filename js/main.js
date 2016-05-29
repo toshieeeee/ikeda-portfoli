@@ -43,11 +43,11 @@ $(window).scroll(function(){
 		$('.about-prof-bottom-bg').addClass('show-each-section');
 	}
 
-	if(scrollVal > portfolioHeight){
+	if(scrollVal > portfolioHeight + 300){
 		$('.portfolio-bottom-bg').addClass('show-each-section');
 	}
 
-	if(scrollVal > newHeight){
+	if(scrollVal > newHeight + 300){
 		$('.news-bottom-bg').addClass('show-each-section');
 	}
 

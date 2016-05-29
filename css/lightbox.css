@@ -107,7 +107,7 @@ body.lb-disable-scrolling {
 
 .lb-next {
     height: 80%;
-    margin-top: 13%;
+    margin-top: 6%;
   }
 
 .lb-nav a.lb-prev {
@@ -116,12 +116,13 @@ body.lb-disable-scrolling {
   float: left;
   margin-left: -90px;
   background: url(../images/prev.png) left 48% no-repeat;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+ /* filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   -o-transition: opacity 0.6s;
   transition: opacity 0.6s;
+  */
 }
 
 .lb-nav a.lb-prev:hover {
@@ -135,12 +136,13 @@ body.lb-disable-scrolling {
   float: right;
   margin-right: -90px;
   background: url(../images/next.png) right 51% no-repeat;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  /*filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
   -moz-transition: opacity 0.6s;
   -o-transition: opacity 0.6s;
   transition: opacity 0.6s;
+  */
 }
 
 .lb-nav a.lb-next:hover {
